@@ -52,7 +52,7 @@ h3{
 
 .biography-container{
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   margin-top: 40px;
 }
 
@@ -100,7 +100,7 @@ img{
 
 .biography-container{
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   margin-top: 40px;
 }
 
