@@ -1,0 +1,218 @@
+*{
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+}
+
+body{
+  padding: 5%;
+  background: rgb(62, 113, 217);
+}
+
+/*--- Color for text ---*/
+h1,h2,h3,p,li{
+    color: rgb(177, 177, 177);
+}
+/*--------------------------*/
+
+a{
+  text-decoration: none;
+  color: rgb(177, 177, 177);
+}
+
+
+img{
+  max-width: 100%;
+}
+
+ul{
+  padding-left: 0;
+}
+
+.nav li,h2{
+  list-style: none;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 15px;
+  font-size: 20px;
+}
+
+h3{
+  font-weight: 400;
+}
+
+.title{
+  font-size: 35px;
+}
+
+.top{
+  margin: 16px 0;
+}
+
+/*----- Containers  ------*/
+
+.biography-container{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 40px;
+}
+
+
+.portfolio-container{
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+h3{
+  font-weight: 400;
+}
+
+
+.profile-picture{
+  padding-top: 30px;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 700;
+  border-top: solid black 2px;
+  margin-top: 85px;
+}
+
+.nav-footer{
+  display: none;
+}
+
+
+
+/*--- Screen min-width: 768px for horizontal phones and vertical tablets ---*/
+@media screen and (min-width: 768px) {
+.nav{
+  width: 490px;
+  display: flex;
+  margin: auto;
+}
+
+img{
+  transition-duration: .3s;
+}
+
+.biography-container{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 40px;
+}
+
+.profile-picture{
+  padding-top: 0;
+  width: 40%;
+  height: 100%;
+}
+
+.biography{
+  width: 50%;
+  padding-right: 25px;
+  text-align: left;
+  margin-top: 0;
+  font-size: 1em;
+}
+
+.project{
+  float: left;
+  width: 45%;
+  margin: auto;
+}
+
+.project:nth-child(even){
+  margin-right: 5%;
+}
+
+.project img{
+  max-width: 100%;
+}
+
+
+.project-description{
+  padding: 0 25px;
+}
+
+.container{
+  max-width: 70%;
+  margin: auto;
+}
+
+.contact-info{
+  margin-bottom: 40px;
+}
+
+.nav-footer{
+  display: flex;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  color: rgb(177,177,177);
+}
+
+.nav-footer li{
+  list-style: none;
+  padding-left: 15px;
+}
+
+img:hover{
+  transform: scale(1.1);
+}
+
+.top{
+  display: none;
+}
+
+}
+/*--- Screen min-width: 1024px for horizontal tablets and normal desktops  ---*/
+@media screen and (min-width: 1024px){
+  body{
+    padding-bottom: 0;
+    padding-top:25px;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+  }
+
+.nav{
+  margin: initial;
+  align-items: center;
+}
+
+.biography{
+  font-size: 1.70em;
+}
+
+.portfolio-container{
+  margin-bottom: 100px;
+}
+
+.project:nth-child(even){
+  margin-right: initial;
+}
+
+.project{
+  width: 30%;
+}
+
+.project.project1,
+.project.project2,
+.project.project4,
+.project.project5{
+  margin-right: 5%;
+}
+
+.project img{
+  max-width: 100%;
+}
+
+.container{
+  max-width: 50%;
+  margin-top: 10%;
+}
+
+}
