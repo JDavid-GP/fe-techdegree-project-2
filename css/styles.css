@@ -19,6 +19,9 @@ a{
   color: rgb(177, 177, 177);
 }
 
+a:visited{
+  color: black;
+}
 
 img{
   max-width: 100%;
