@@ -100,7 +100,7 @@ img{
 
 .biography-container{
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   margin-top: 40px;
 }
 
